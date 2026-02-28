@@ -1,41 +1,100 @@
+# ===============================
 # Prerequisites
+# ===============================
 *.d
 
+# ===============================
 # Compiled Object files
+# ===============================
 *.slo
 *.lo
 *.o
 *.obj
 
+# ===============================
 # Precompiled Headers
+# ===============================
 *.gch
 *.pch
 
-# Linker files
+# ===============================
+# Linker / Debugger files
+# ===============================
 *.ilk
-
-# Debugger Files
 *.pdb
+*.dwo
 
-# Compiled Dynamic libraries
+# ===============================
+# Dynamic libraries
+# ===============================
 *.so
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
+# ===============================
+# Static libraries
+# ===============================
 *.lai
 *.la
 *.a
 *.lib
 
+# ===============================
 # Executables
+# ===============================
 *.exe
 *.out
 *.app
 
-# debug information files
-*.dwo
+# ===============================
+# CMake / Build System
+# ===============================
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+Testing/
+CTestTestfile.cmake
+
+# Make / Ninja
+Makefile
+build.ninja
+.ninja_log
+.ninja_deps
+
+# ===============================
+# Profiling / Coverage
+# ===============================
+*.gcda
+*.gcno
+*.prof
+*.profraw
+*.profdata
+
+# ===============================
+# IDE / Editor
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+*.userosscache
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Optional (clang tooling)
+# ===============================
+.clangd/
+
+# ===============================
+# Executables
+# ===============================
+*.out
+*.exe
