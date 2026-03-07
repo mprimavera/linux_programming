@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -20,7 +21,7 @@ int main()
     net_salary = basic_salary * (1 + percent_allowances/100 - percent_deductions/100);
 
     // print the net salary to the user
-    cout << "The net salary is $" << net_salary << endl;
+    cout << "The net salary is $" << fixed << setprecision(2) << net_salary << endl;
 
     return 0;
 }

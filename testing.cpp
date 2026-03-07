@@ -15,8 +15,12 @@ float distance(int x1,int y1,int x2,int y2)
 
 int main()
 {
-    float result = distance(0, 0, 3, 4);
-    cout<<result<<endl;
+    //float result = distance(0, 0, 3, 4);
+
+    int a = 11;
+    int b = 9;
+
+    cout << (a | b) << endl;
 
     return 0;
 }
