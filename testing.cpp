@@ -1,26 +1,18 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-#include<cmath>
 
+template<class t>
 
-float distance(int x1,int y1,int x2,int y2)
+t Max(t a, t b)
 {
-    float dist;
-    
-    dist= sqrt(pow((x2 - x1), 2.0f) + pow((y2 - y1),2.0f));//write expression here
-    
-    return dist;
+    if (a > b) return a;
+    else return b;
 }
-
 
 int main()
 {
-    //float result = distance(0, 0, 3, 4);
-
-    int a = 11;
-    int b = 9;
-
-    cout << (a | b) << endl;
+    cout<<Max(10,5)<<endl;
+    cout<<Max(12.5f,17.3f);
 
     return 0;
 }
