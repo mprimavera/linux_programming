@@ -26,7 +26,7 @@ int main()
     int int_array[] = {1, 2, 3};
     char char_array[4] = {'a', 'b', 'c', 'd'};
 
-    int int_element = 4;
+    int int_element = 3;
     char char_element = 'k';
 
     find_element(int_element, int_array);

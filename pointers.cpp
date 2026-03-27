@@ -1,11 +1,34 @@
 # include<iostream>
 using namespace std;
     
-/*program for demo pointers
+/*program for demo pointers */
 
-*/
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
+
+int min(int a, int b)
+{
+    return a < b ? a : b;
+}
+
+
 int main()
 {
+    // declares a function pointer fp to function for two int arguments and return type int
+    int (*fp)(int, int);
+    // assign the function pointer to the max function address: fp -> pointer to function
+    fp = max;
+    // call max function using function pointer fp
+    int maximum = fp(2, 3);
+    cout << maximum << endl;
+    // can dynamically switch the pointer to the other function, since inputs and outputs match the fp declaration input and output types
+    fp = min;
+    // derefercences the variable fp to the function, and the parentheses keep the dereferencing prior to the function call
+    // without parenthesis, ie *fp(4, 5) would call the function then derefernce the int returned which is an error
+    // (*fp) -> dereferenced to the function itself
+    cout << (*fp)(4, 5) << endl; 
 
     int x = {10};
 
