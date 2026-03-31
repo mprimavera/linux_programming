@@ -30,10 +30,10 @@ int main()
     // create a Rectangle object in heap and access with Rectange pointer
     Rectangle* ptr1 = new Rectangle;
 
-    // set the heap rectangle length to 5 with the pointer accessor operator
+    // set the heap rectangle length to 5 with the pointer accessor arrow operator
     ptr1->length = 10;
 
-    // set r1's breadth to 5 using the pointer accessor operator
+    // set r1's breadth to 5 using the arrow operator
     ptr1->breadth = 5;
 
     bool equal = (r1.length == ptr1->length);
@@ -41,7 +41,7 @@ int main()
     // both accessor operators produce the same value / or data attribute
     cout << equal << endl << r1.length << " = " << ptr1->length << endl << ptr1;
 
-    // both accessor operators produce the same function of the same object instance
+    // both accessor operators produce the same function return value
     cout << endl << r1.area() << " = " << ptr1->area() << endl << r1.perimeter() << " = " << ptr1->perimeter() << endl;
     return 0;
 }
